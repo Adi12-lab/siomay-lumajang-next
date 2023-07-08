@@ -1,5 +1,5 @@
-import Line from "../../public/assets/line.png"
-import Model from "../../public/assets/model.png"
+import Line from "../../public/assets/image/line.png"
+import Model from "../../public/assets/image/model.png"
 import Image from 'next/image'
 import CardTeam from "../fragments/cardTeam"
 export default function Team() {
@@ -13,7 +13,7 @@ export default function Team() {
                     </div>
                     <div className="lg:w-1/2 lg:pl-4">
                         <div className="overflow-hidden">
-                            <h2 className="team-name font-playfair text-3xl sm:text-[35.2px] md:text-xl">Sugeng Rihandoyo</h2>
+                            <h2 className="team-name font-playfair font-bold text-3xl sm:text-[35.2px] md:text-xl text-balance">Sugeng Rihandoyo</h2>
                             <Image src={Line} alt="Line" className="team-line mt-3 h-1 w-1 scale-x-0 opacity-0" />
                             <p className="team-desc desc mt-4 font-inter opacity-0">
                                 Sugeng Rihandoyo, seorang pedagang kaki lima yang telah mengubah cara Lumajang menikmati siomay. Sugeng bukanlah penjual siomay biasa, dia adalah orang pertama yang memperkenalkan kelezatan siomay khas Bandung di kota Lumajang selama 20 tahun ini.

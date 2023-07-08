@@ -1,6 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
-import Siomay from "../../public/assets/food.jpg"
+import Siomay from "../../public/assets/image/food.jpg"
 
 import ButtonLink from '../fragments/ButtonLink'
 

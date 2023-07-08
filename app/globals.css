@@ -2,10 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .about-card {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    text-wrap: balance;
-  }
-  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.text-balance {
+  text-wrap: balance;
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-black transition duration-500 ease-in-out;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+.about-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* #testimonies {
+  @apply stati;
+} */
+.swiper-pagination {
+  @apply relative mt-10;
+}
+.swiper-pagination-bullet {
+  @apply ms-2 h-[10px] w-[10px] bg-transparent opacity-100 outline outline-1 outline-primary transition-all duration-200;
+}
+.swiper-pagination-bullet-active {
+  @apply block h-[10px] w-[30px] rounded-[35px] bg-primary;
+}
+
+.slide-middle {
+  @apply bg-primary text-white;
+}
+.slide-middle p,
+.slide-middle span,
+.slide-middle span svg {
+  @apply text-white;
+}
+
+.back-line::before {
+  content: "";
+  @apply absolute top-full h-[3px] w-[25px] bg-primary;
+}

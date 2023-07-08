@@ -1,7 +1,7 @@
-import Slipper from "../../public/assets/slipper.png"
-import Fish from "../../public/assets/fish.png"
-import Orders from "../../public/assets/orders.png"
-import Line from "../../public/assets/line.png"
+import Slipper from "../../public/assets/image/slipper.png"
+import Fish from "../../public/assets/image/fish.png"
+import Orders from "../../public/assets/image/orders.png"
+import Line from "../../public/assets/image/line.png"
 import Image from 'next/image'
 import { StaticImageData } from 'next/image';
 export default function About() {
@@ -52,7 +52,7 @@ export default function About() {
                         return (
                             <div
                                 key={index}
-                                className={`about-card card-${index} group flex h-[249px] w-[321px] flex-col items-center justify-center rounded-[50px] opacity-0 from-[#FF7010] to-[#473B32] p-7 hover:bg-gradient-to-br`}
+                                className={`about-card card-${index} group flex h-[249px] w-[321px] flex-col items-center justify-center rounded-[50px] opacity-0 from-[#FF7010] to-[#473B32] p-7 text-balance hover:bg-gradient-to-br`}
                             >
                                 <div className="w-fit rounded-full bg-primary px-4 py-3 transition-all duration-100 ease-in-out group-hover:bg-white ">
                                     <Image

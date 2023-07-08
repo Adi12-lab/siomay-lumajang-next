@@ -5,6 +5,10 @@ import Team from './components/team'
 import { trigger, getClass } from './helper'
 import anime from 'animejs'
 import { useEffect } from 'react'
+import Break from './components/break'
+import Gallery from './components/gallery'
+import Testimoni from './components/testimoni'
+import Footer from './components/footer'
 export default function Home() {
   useEffect(() => {
     const HeroImage: HTMLElement | null = document.querySelector(".hero-image") //menjadi entry awal
@@ -131,9 +135,13 @@ export default function Home() {
   }, [])
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <About />
       <Team />
+      <Break />
+      <Gallery /> */}
+      <Testimoni />
+      <Footer />
     </main>
   )
 }
