@@ -1,14 +1,11 @@
 "use client"
-import Hero from './components/hero'
-import About from './components/about'
-import Team from './components/team'
 import { trigger, getClass } from './helper'
 import anime from 'animejs'
 import { useEffect } from 'react'
-import Break from './components/break'
-import Gallery from './components/gallery'
-import Testimoni from './components/testimoni'
-import Footer from './components/footer'
+
+import { Suspense } from 'react'
+import Merge from './merge'
+import Loading from './loading'
 export default function Home() {
   useEffect(() => {
     const HeroImage: HTMLElement | null = document.querySelector(".hero-image") //menjadi entry awal
@@ -134,14 +131,11 @@ export default function Home() {
 
   }, [])
   return (
-    <main>
-      {/* <Hero />
-      <About />
-      <Team />
-      <Break />
-      <Gallery /> */}
-      <Testimoni />
-      <Footer />
-    </main>
+    <>
+    <Suspense fallback={<Loading />}>
+      <Merge />
+
+    </Suspense>
+    </>
   )
 }

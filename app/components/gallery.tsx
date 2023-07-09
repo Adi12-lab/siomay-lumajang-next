@@ -30,7 +30,6 @@ const Gallery = () => {
   const lgSwiperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    console.log(images)
     let lg: LightGallery;
     const swiperParams: SwiperOptions = {
       modules: [Autoplay],
@@ -105,7 +104,7 @@ const Gallery = () => {
   return (
     <section className="mt-7 pt-14">
       <div className="container max-w-full">
-        <h2 className="gallery-title text-center font-playfair text-3xl opacity-0 sm:text-[35.2px] md:text-xl">
+        <h2 className="gallery-title text-center font-playfair font-bold text-3xl opacity-0 sm:text-[35.2px] md:text-xl">
           Galeri Kami
         </h2>
         <Image src={Line} alt="line" className="gallery-line mx-auto mt-3 h-1 w-1 opacity-0s" />
@@ -115,9 +114,9 @@ const Gallery = () => {
               <a
                 href={item.src}
                 key={index}
-                className="swiper-slide flex h-[270px] rounded-lg justify-center overflow-hidden px-0 sm:h-[320px] lg:h-[306px]"
+                className="swiper-slide gallery-slide"
               >
-                <Image src={item} alt={item.src} className="w-full" />
+                <Image src={item} alt={item.src} className="w-full" style={{width: "auto" }} />
               </a>
             ))}
           </div>
