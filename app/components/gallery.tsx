@@ -38,8 +38,7 @@ const Gallery = () => {
       },
       slidesPerView: 1,
       spaceBetween: 15,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
+
       breakpoints: {
         600: {
           slidesPerView: 1.6,

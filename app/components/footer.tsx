@@ -4,6 +4,7 @@ import {
   faLocationDot,
   faPhone,
   faEnvelope,
+  faClock
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -74,6 +75,10 @@ const Footer = () => {
                   className="me-3 text-primary"
                 />
                 siomaylumajang@gmail.com
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faClock} className="me-3 text-primary" />
+                15.30 - 21.00 WIB
               </li>
             </ul>
           </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const Links = [
     { name: "Home", link: "hero", offset: -200 },
-    { name: "Tentang kami", link: "about", offset: -100 },
+    { name: "Tentang kami", link: "about", offset: -70 },
     { name: "Tim kami", link: "team", offset: -100},
     { name: "Galeri", link: "gallery", offset: -250 },
     { name: "Testimoni", link: "testimonies", offset: -50 },

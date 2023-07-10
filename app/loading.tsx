@@ -1,9 +1,11 @@
-
 export default function Loading() {
+    console.log("Loading")
     return (
-        <div className="h-screen">
-            <div className="flex items-center">
-                loading....
+        <div className="three">
+            <div className="three-body">
+                <div className="three-body__dot"></div>
+                <div className="three-body__dot"></div>
+                <div className="three-body__dot"></div>
             </div>
         </div>
     )
