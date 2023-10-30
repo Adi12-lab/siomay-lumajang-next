@@ -112,9 +112,9 @@ const Testimoni = () => {
 
     ];
     return (
-        <section className="mt-7 pt-14" id="testimonies">
+        <section className="mt-7 pt-14">
             <div className="container max-w-full">
-                <h2 className="testimoni-title text-center font-playfair font-bold opacity-0 text-3xl sm:text-[35.2px] md:text-xl">Testimoni</h2>
+                <h2 className="testimoni-title text-center font-playfair font-bold opacity-0 text-3xl sm:text-[35.2px] md:text-xl" id="testimonies">Testimoni</h2>
                 <Image src={Line} alt="line" className="testimoni-line mx-auto mt-3 h-1 w-1 opacity-0" />
                 <Swiper
                     className="mt-10"

@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOffset, setIsOffset] = useState(false);
 
+
   useEffect(() => {
     window.onscroll = () => {
       const navbar: HTMLElement | null = document.querySelector("#navbar");
@@ -15,14 +16,15 @@ const Navbar = () => {
       }
     };
 
-  });
+
+  }, []);
 
   const Links = [
     { name: "Home", link: "hero", offset: -200 },
     { name: "Tentang kami", link: "about", offset: -70 },
-    { name: "Tim kami", link: "team", offset: -100},
-    { name: "Galeri", link: "gallery", offset: -250 },
-    { name: "Testimoni", link: "testimonies", offset: -50 },
+    { name: "Tim kami", link: "team", offset: -70},
+    { name: "Galeri", link: "gallery", offset: -100 },
+    { name: "Testimoni", link: "testimonies", offset: -100 },
   ];
 
   return (

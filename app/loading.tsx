@@ -1,5 +1,4 @@
 export default function Loading() {
-    console.log("Loading")
     return (
         <div className="three">
             <div className="three-body">

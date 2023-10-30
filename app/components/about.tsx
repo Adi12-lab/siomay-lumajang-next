@@ -33,10 +33,10 @@ export default function About() {
     ];
 
     return (
-        <section className="mt-7 bg-[#FAFAFA] py-14" id="about">
+        <section className="mt-7 bg-[#FAFAFA] py-14">
             <div className="container max-w-full">
                 <div className="pb-4 text-center">
-                    <h2 className="about-title font-playfair text-3xl font-bold opacity-0 leading-9 sm:text-[35.2px] sm:leading-10 md:text-xl">
+                    <h2 className="about-title font-playfair text-3xl font-bold opacity-0 leading-9 sm:text-[35.2px] sm:leading-10 md:text-xl" id="about">
                         Selamat Datang di Siomay Lumajang
                     </h2>
                     <Image src={Line} alt="line" className="about-line mx-auto mt-4 w-1 h-1 scale-0" />

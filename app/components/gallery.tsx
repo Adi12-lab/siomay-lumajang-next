@@ -63,7 +63,7 @@ const Gallery = () => {
         },
       },
     };
-    const swiper = new Swiper("#gallery", swiperParams);
+    const swiper = new Swiper("#lightgallery", swiperParams);
 
 
     //Animasi
@@ -103,11 +103,11 @@ const Gallery = () => {
   return (
     <section className="mt-7 pt-14">
       <div className="container max-w-full">
-        <h2 className="gallery-title text-center font-playfair font-bold text-3xl opacity-0 sm:text-[35.2px] md:text-xl">
+        <h2 className="gallery-title text-center font-playfair font-bold text-3xl opacity-0 sm:text-[35.2px] md:text-xl" id="gallery">
           Galeri Kami
         </h2>
         <Image src={Line} alt="line" className="gallery-line mx-auto mt-3 h-1 w-1 opacity-0s" />
-        <div id="gallery" className="swiper mt-16">
+        <div id="lightgallery" className="swiper mt-16">
           <div className="swiper-wrapper" ref={lgSwiperRef}>
             {images.map((item, index) => (
               <a

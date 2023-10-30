@@ -6,20 +6,19 @@ const inter = Inter({
 })
 
 const playfair = Playfair_Display({
-  subsets: ['cyrillic'],
+  subsets: ['latin'],
   variable: '--font-playfair',
 })
 
 const dataForMeta = {
   title: "Siomay Lumajang",
   title2: 'Siomay Lumajang | Khas bandung banget',
-  description: 'Selamat datang di dunia kelezatan siomay Lumajang khas Bandung! Siomay ini terkenal dengan cita rasanya yang autentik dan menggugah selera. Dibuat dengan cermat menggunakan ikan tenggiri asli, siomay Lumajang membawa keunikan dan kelezatan dari kota Bandung yang terkenal dengan masakan yang menggoda lidah.',
+  description: 'Selamat datang di dunia kelezatan siomay Lumajang khas Bandung! Siomay ini terkenal dengan cita rasanya yang autentik dan menggugah selera.',
   author: "Sugeng rihandoyo"
-
 }
 
 export const metadata = {
-  title: dataForMeta.title,
+  title: dataForMeta.title2,
   description: dataForMeta.description,
   openGraph: {
     title: dataForMeta.title,
@@ -37,8 +36,6 @@ const jsonLd = {
     name: dataForMeta.author
   }
 }
-
-
 
 
 export default function RootLayout({

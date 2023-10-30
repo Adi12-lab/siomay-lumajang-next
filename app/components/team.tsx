@@ -5,11 +5,11 @@ import CardTeam from "../fragments/cardTeam"
 export default function Team() {
     
     return (
-        <section className="mt-16 pb-14" id="team">
+        <section className="mt-16 pb-14" >
             <div className="container max-w-full">
                 <div className="flex w-full flex-wrap">
                     <div className="h-max lg:w-1/2">
-                        <Image src={Model} alt="sugeng rihandoyo" className="team-image opacity-0" />
+                        <Image src={Model} alt="sugeng rihandoyo" className="team-image opacity-0" id="team" />
                     </div>
                     <div className="lg:w-1/2 lg:pl-4">
                         <div className="overflow-hidden">
@@ -20,7 +20,7 @@ export default function Team() {
                             </p>
 
                             <p className="team-desc mt-3 font-inter opacity-0">
-                                Namun, bukan hanya rasa yang membuat siomay Sugeng begitu spesial. Sugeng percaya bahwa kepuasan pelanggan adalah segalanya. &lsquo Pelanggan puas, kita juga puas,&lsquo  katanya, menunjukkan komitmennya untuk memberikan layanan terbaik.
+                                Namun, bukan hanya rasa yang membuat siomay Sugeng begitu spesial. Sugeng percaya bahwa kepuasan pelanggan adalah segalanya. <strong>&ldquo;Pelanggan puas, kita juga puas&rdquo; </strong> katanya, menunjukkan komitmennya untuk memberikan layanan terbaik.
                                 Dia juga dikenal karena sifatnya yang humoris, menciptakan suasana yang nyaman dan menyenangkan bagi pelanggan. Dengan Sugeng, membeli siomay bukan hanya tentang makanan, tetapi juga tentang pengalaman - sebuah perjalanan kuliner yang menggembirakan dan memuaskan.
                             </p>
                         </div>

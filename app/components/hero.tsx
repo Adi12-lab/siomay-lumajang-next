@@ -12,7 +12,7 @@ export default function Hero() {
           <Image
             src={Siomay}
             alt="Siomay"
-            className="hero-image opacity-0 w-full"
+            className="hero-image w-full"
           />
         </div>
         <div className="lg:w-1/2">
@@ -22,7 +22,7 @@ export default function Hero() {
             <span className="me-2 inline-block opacity-0">Mantap</span>
           </h1>
           <p className="hero-caption mt-2 font-inter text-base opacity-0 text-gray">
-            Siomay Lumajang dibuat dengan ikan tenggiri asli Bandung, memberikan rasa yang tak tertandingi. Setiap gigitan membawa kenikmatan seolah-olah Anda sedang berada di jantung Bandung.
+            Siomay Lumajang dibuat dengan ikan tenggiri asli. Setiap gigitan membawa kenikmatan seolah-olah Anda sedang berada di jantung Bandung.
           </p>
           <ButtonLink className='hero-button inline-block cursor-pointer mt-5 rounded-full bg-gradient-to-b from-[#FD831E] to-[#FF6D1A] px-5 py-3 text-white opacity-0 shadow-lg' to='about' smooth={true} offset={-120}>
             Lebih Lengkap

@@ -45,6 +45,7 @@ const ScrollUp = () => {
         icon={faChevronUp}
         className="align-middle text-[22px] font-bold text-white"
       />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio magni libero dolorem eveniet. Ab veritatis totam corrupti doloribus id reprehenderit esse, atque, temporibus cum vitae adipisci nulla dolore modi sed.
     </button>
   );
 };

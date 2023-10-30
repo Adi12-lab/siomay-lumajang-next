@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer className="mt-14">
       <div className="container max-w-full bg-[#282932] py-16">
-        <div className="flex flex-wrap justify-between gap-y-6 text-white flex-col md:flex-row">
+        <div className="flex flex-wrap justify-between gap-y-6 text-white flex-col md:flex-row md:gap-x-4">
           <div className="w-full lg:h-[203px] lg:w-[268.5px]">
             <h1 className="font-playfair text-3xl font-black">
               Siomay <span className="text-primary">Lumajang</span>

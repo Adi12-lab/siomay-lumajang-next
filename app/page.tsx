@@ -20,12 +20,6 @@ export default function Home() {
       anime
         .timeline({
           easing: "easeInOutCubic",
-
-        })
-        .add({
-          targets: ".hero-image",
-          opacity: [0, 1],
-          duration: 1500
         })
         .add({
           targets: ".hero-slug span",
@@ -140,7 +134,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='overflow-x-hidden'>
         <ScrollUp />
         <Hero />
         <About />
