@@ -2,22 +2,39 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import anime from "animejs";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isOffset, setIsOffset] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  const animateScroll = (target: string) => {
+    const element = document.getElementById(target);
+    if (element) {
+        const targetOffsetTop = element.offsetTop - 100;
+        anime({
+            targets: document.documentElement,
+            scrollTop: targetOffsetTop,
+            duration: 500,
+            easing: 'easeOutQuad'
+        });
+    }
+};
 
   useEffect(() => {
-    window.onscroll = () => {
-      const navbar: HTMLElement | null = document.querySelector("#navbar");
-      if (navbar) {
-        if (window.scrollY > navbar.offsetTop) setIsOffset(true);
-        else setIsOffset(false);
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
       }
+
     };
+    window.addEventListener("scroll", handleScroll);
 
-
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   const Links = [
     { name: "Home", link: "hero", offset: -200 },
@@ -30,9 +47,9 @@ const Navbar = () => {
   return (
     <header
       className={`${
-        isOffset ? "fixed shadow-lg" : "relative"
+        isScrolled ? "fixed shadow-lg" : "relative"
       } left-0 top-0 z-10 w-full bg-orange-300 transition duration-200 ${
-        isOffset ? "" : "lg:absolute lg:bg-transparent"
+        isScrolled ? "" : "lg:absolute lg:bg-transparent"
       }  lg:py-3"`}
       id="navbar"
     >
@@ -44,6 +61,7 @@ const Navbar = () => {
 
           <button
             id="hamburger"
+            name="hamburger"
             type="button"
             className={`block lg:hidden ${isOpen ? "hamburger-active" : ""}`}
             onClick={() => {
@@ -61,14 +79,15 @@ const Navbar = () => {
           >
             {Links.map((link) => (
               <li key={link.name} className="my-7 lg:my-0 lg:ml-8">
-                <Link
-                  to={link.link}
-                  smooth
-                  offset={link.offset}
+                <button
+                  onClick={()=> {
+                    animateScroll(link.link)
+                  }}
+                  type="button"
                   className="hover:text-gray-400 font-medium text-black duration-500 cursor-pointer"
                 >
                   {link.name}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>

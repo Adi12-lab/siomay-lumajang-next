@@ -24,7 +24,7 @@ export default function CardTeam() {
     ];
 
     useEffect(() => {
-
+        
         const teamExperience = Array.from(document.getElementsByClassName("team-experience"))
         teamExperience.forEach((experience, i) => {
             trigger(experience, () => {

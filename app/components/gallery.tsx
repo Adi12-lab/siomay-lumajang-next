@@ -1,3 +1,4 @@
+"use client"
 import Swiper from "swiper";
 import { Autoplay} from 'swiper/modules';
 import { useEffect, useRef } from "react";
@@ -115,7 +116,7 @@ const Gallery = () => {
                 key={index}
                 className="swiper-slide gallery-slide"
               >
-                <Image src={item} alt={item.src} className="w-full" style={{width: "auto" }} />
+                <Image src={item} alt={item.src} className="w-full" style={{width: "auto" }} loading='eager'/>
               </a>
             ))}
           </div>

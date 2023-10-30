@@ -36,6 +36,7 @@ const ScrollUp = () => {
   return (
     <button
       onClick={scrollToTop}
+      name="scrollUp"
       type="button"
       className={`fixed left-[84%] top-[90%] z-[9999] h-[50px] w-[50px] rounded-full bg-primary text-center leading-[49px] transition-opacity duration-500 ease-in-out opacity-${
         isVisible ? "100" : "0"
@@ -45,7 +46,6 @@ const ScrollUp = () => {
         icon={faChevronUp}
         className="align-middle text-[22px] font-bold text-white"
       />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio magni libero dolorem eveniet. Ab veritatis totam corrupti doloribus id reprehenderit esse, atque, temporibus cum vitae adipisci nulla dolore modi sed.
     </button>
   );
 };
