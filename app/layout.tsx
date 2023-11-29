@@ -12,8 +12,8 @@ const playfair = Playfair_Display({
 
 const dataForMeta = {
   title: "Siomay Lumajang",
-  title2: 'Siomay Lumajang | Khas bandung banget',
-  description: 'Selamat datang di dunia kelezatan siomay Lumajang khas Bandung! Siomay ini terkenal dengan cita rasanya yang autentik dan menggugah selera.',
+  title2: 'Siomay Lumajang | Khas Lumajang',
+  description: 'Selamat datang di dunia kelezatan siomay Lumajang! Siomay ini terkenal dengan cita rasanya yang autentik dan menggugah selera.',
   author: "Sugeng rihandoyo"
 }
 
@@ -27,7 +27,7 @@ export const metadata = {
 }
 
 const jsonLd = {
-  "@context": "http://schema.org",
+  "@context": "https://siomaylumajang.com",
   "@type": "Product",
   name: dataForMeta.title,
   description: dataForMeta.description,

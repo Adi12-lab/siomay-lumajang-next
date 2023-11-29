@@ -71,7 +71,7 @@ export default function Hero() {
             <span className={`me-2 inline-block ${isDesktop ? 'opacity-0' : ''}`}>Mantap</span>
           </h1>
           <p className={`hero-caption mt-2 font-inter text-base ${isDesktop ? 'opacity-0' : ''} text-gray`}>
-            Siomay Lumajang dibuat dengan ikan tenggiri asli. Setiap gigitan membawa kenikmatan seolah-olah Anda sedang berada di jantung Bandung.
+            Siomay Lumajang dibuat menggunakan ikan pilihan yang berkualitas. Rasakan kenikmatannya seolah - olah berada di jantung Kota Lumajang.
           </p>
           <button 
           type='button' 

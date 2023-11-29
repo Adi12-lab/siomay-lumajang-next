@@ -1,5 +1,5 @@
 "use client"
-import { Link } from "react-scroll";
+import Grafis from "@/public/assets/image/grafis.png"
 import {
   faLocationDot,
   faPhone,
@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import anime from "animejs";
 
 import { formatPhone } from "../helper";
+import Image from "next/image";
 
 const Footer = () => {
   const Links = [
@@ -37,11 +38,14 @@ const Footer = () => {
       <div className="container max-w-full bg-[#282932] py-16">
         <div className="flex flex-wrap justify-between gap-y-6 text-white flex-col md:flex-row md:gap-x-4">
           <div className="w-full lg:h-[203px] lg:w-[268.5px]">
-            <h1 className="font-playfair text-3xl font-black">
-              Siomay <span className="text-primary">Lumajang</span>
-            </h1>
+            <div className="flex gap-x-3">
+              <Image src={Grafis} alt="Siomay Lumajang" sizes="(max-width: 576px) 300px, 600px" width={100}/>
+            <h3 className="font-playfair text-3xl font-black mt-3">
+              Siomay <span className="block text-primary">Lumajang</span>
+            </h3>
+            </div>
             <p className="mt-8 font-inter">
-              Rasakan sendiri kenikmatan siomay khas Bandung yang telah dibawa ke kota pisang ini. Anda tidak akan kecewa.
+              Rasakan sendiri kenikmatan Siomay Lumajang yang telah menjadi khas kota pisang ini. Anda tidak akan kecewa.
             </p>
           </div>
           <div className="font-inter">

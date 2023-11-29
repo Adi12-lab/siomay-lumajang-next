@@ -1,8 +1,9 @@
-"use client"
-
+"use client";
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import Image from "next/image";
 import anime from "animejs";
+import Grafis from "@/public/assets/image/grafis.png"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,15 +11,15 @@ const Navbar = () => {
   const animateScroll = (target: string) => {
     const element = document.getElementById(target);
     if (element) {
-        const targetOffsetTop = element.offsetTop - 100;
-        anime({
-            targets: document.documentElement,
-            scrollTop: targetOffsetTop,
-            duration: 500,
-            easing: 'easeOutQuad'
-        });
+      const targetOffsetTop = element.offsetTop - 100;
+      anime({
+        targets: document.documentElement,
+        scrollTop: targetOffsetTop,
+        duration: 500,
+        easing: "easeOutQuad",
+      });
     }
-};
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,18 +29,16 @@ const Navbar = () => {
       } else {
         setIsScrolled(false);
       }
-
     };
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const Links = [
     { name: "Home", link: "hero", offset: -200 },
     { name: "Tentang kami", link: "about", offset: -70 },
-    { name: "Tim kami", link: "team", offset: -70},
+    { name: "Tim kami", link: "team", offset: -70 },
     { name: "Galeri", link: "gallery", offset: -100 },
     { name: "Testimoni", link: "testimonies", offset: -100 },
   ];
@@ -55,9 +54,12 @@ const Navbar = () => {
     >
       <div className="container max-w-full">
         <div className="mx-auto flex items-center justify-between bg-orange-300 py-4 lg:bg-transparent">
-          <h1 className="font-playfair text-3xl font-black">
-            Siomay <span className="text-primary">Lumajang</span>
-          </h1>
+          <div className="flex gap-x-3">
+          <Image src={Grafis} alt="Siomay Lumajang" sizes="(max-width: 576px) 300px, 600px" width={50}/>
+            <h1 className="font-playfair text-3xl font-black mt-1">
+              Siomay <span className="text-primary">Lumajang</span>
+            </h1>
+          </div>
 
           <button
             id="hamburger"
@@ -80,8 +82,8 @@ const Navbar = () => {
             {Links.map((link) => (
               <li key={link.name} className="my-7 lg:my-0 lg:ml-8">
                 <button
-                  onClick={()=> {
-                    animateScroll(link.link)
+                  onClick={() => {
+                    animateScroll(link.link);
                   }}
                   type="button"
                   className="hover:text-gray-400 font-medium text-black duration-500 cursor-pointer"

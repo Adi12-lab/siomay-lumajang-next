@@ -1,14 +1,15 @@
 "use client"
+import Image from 'next/image';
 import { useState, useEffect } from 'react'
+import anime from "animejs";
 
-import Line from "../../public/assets/image/line.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faQuoteLeft, } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import anime from "animejs";
 import { trigger } from '../helper';
-import Image from 'next/image';
+
+import Line from "../../public/assets/image/line.png";
 
 
 // Import Swiper styles
@@ -72,42 +73,35 @@ const Testimoni = () => {
             status: "Pecinta Kuliner",
             img: "/assets/image/food.jpg",
             comment:
-                "Sebagai seorang foodie, saya selalu mencari makanan yang unik dan. Siomay Pak Sugeng benar-benar memenuhi kriteria itu. Rasanya luar biasa dan membuat saya ingin mencoba lagi.",
+                "Sebagai seorang foodie, saya selalu mencari makanan yang unik dan. Siomay Lumajang ini memang paling pas. Rasanya luar biasa dan membuat saya pengen nagih.",
         },
         {
             name: "Dian",
             status: "Pelanggan baru",
             img: "/assets/image/food.jpg",
             comment:
-                "Saya baru saja mencoba siomay Pak Sugeng untuk pertama kalinya dan saya sangat terkesan! Saya pasti akan kembali lagi.",
-        },
-        {
-            name: "Ibu Sari",
-            status: "Pelanggan dengan Anak",
-            img: "/assets/image/food.jpg",
-            comment:
-                "Anak-anak saya sangat menyukai siomay Pak Sugeng. Itu adalah salah satu favorit mereka dan kami sering membelinya sebagai camilan sore.",
+                "Baru aja nyoba Siomay Lumajang untuk pertama kalinya dan saya sangat terkesan!.",
         },
         {
             name: "Bapak Joko",
             status: "Pencari makanan sehat",
             img: "/assets/image/food.jpg",
             comment:
-                "Saya sangat menghargai bahwa siomay Pak Sugeng dibuat dengan ikan tenggiri asli. Rasanya lezat dan saya merasa baik karena tahu bahwa saya memberi tubuh saya makanan yang sehat.",
+                "Siomay Lumajang dibuat dengan ikan asli bukan tepung di kebanyakan siomay lainnya ditambah rasanya Maknyuus",
         },
         {
             name: "Bapak Joko",
             status: "Pemburu camilan",
             img: "/assets/image/food.jpg",
             comment:
-                "Siomay Pak Sugeng tidak hanya lezat, tetapi juga harganya sangat terjangkau. Itu selalu memberikan nilai terbaik untuk uang saya.",
+                "Siomay Lumajang tidak hanya lezat, tetapi juga harganya sangat terjangkau.",
         },
         {
             name: "Ibu Tini",
             status: "Pelanggan lama",
             img: "/assets/image/food.jpg",
             comment:
-                "Saya suka bagaimana Pak Sugeng selalu membuat sayaawa. Membeli siomay dari dia bukan hanya tentang makanan, tetapi juga tentang pengalaman yang menyenangkan.",
+                "Saya suka bagaimana Pak Sugeng selalu membuat saya tertawa. Rasanya membeli siomay bukan hanya tentang makanan, tetapi juga tentang pengalaman yang menyenangkan hahaha.",
         },
 
     ];

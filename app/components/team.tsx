@@ -75,7 +75,7 @@ export default function Team() {
                             <h2 className="team-name font-playfair font-bold text-3xl sm:text-[35.2px] md:text-xl text-balance">Sugeng Rihandoyo</h2>
                             <Image src={Line} alt="Line" className={`team-line mt-1 h-1 w-1 scale-x-0 ${isDesktop ? 'opacity-0' : ''} md:mt-3`} />
                             <p className={`team-desc desc mt-4 font-inter${isDesktop ? 'opacity-0' : ''}`}>
-                                Sugeng Rihandoyo, seorang pedagang kaki lima yang telah mengubah cara Lumajang menikmati siomay. Sugeng bukanlah penjual siomay biasa, dia adalah orang pertama yang memperkenalkan kelezatan siomay khas Bandung di kota Lumajang selama 20 tahun ini.
+                                Sugeng Rihandoyo, seorang pedagang kaki lima yang telah mengubah cara Lumajang menikmati siomay. Sugeng bukanlah penjual siomay biasa, dia adalah orang pertama yang memperkenalkan kelezatan siomay di Kota Lumajang dan berlanjut selama 20 tahun ini.
                             </p>
 
                             <p className={`team-desc mt-3 font-inter ${isDesktop ? 'opacity-0' : ''}`}>
